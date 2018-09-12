@@ -10,6 +10,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class AppController {
 
+  /**
+   * Getting the default view
+   * @return String view name
+   */
   @RequestMapping("/")
   public String index() {
     return "app";
