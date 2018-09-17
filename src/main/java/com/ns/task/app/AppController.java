@@ -1,6 +1,7 @@
 package com.ns.task.app;
 
 import com.ns.task.common.Product;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.stereotype.Controller;
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class AppController {
 
   /**
-   * Getting the default view
+   * Getting the default view.
    * @return String view name
    */
   @RequestMapping("/")
@@ -26,12 +27,14 @@ public class AppController {
    */
   @RequestMapping("/all")
   public String getAll(ModelMap model) {
-    // Temporal code, only to test proposes
+
+
+    // TODO: use implement the call to queue to get all the Products
     Product newProduct = new Product();
     newProduct.setDescription("this is a description");
     newProduct.setId(1);
     newProduct.setName("some Name");
-    newProduct.setPrice(5.676);
+    newProduct.setPrice(new BigDecimal(6.66));
 
     List<Product> products = new ArrayList<>();
     products.add(newProduct);

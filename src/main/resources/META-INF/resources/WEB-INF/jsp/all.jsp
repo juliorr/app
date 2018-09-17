@@ -12,10 +12,10 @@
     </div>
     <div class="row">
         <div class="col-2">
-            <a class="btn btn-outline-primary" href="#" role="button">Add</a>
+            <a class="btn btn-outline-primary" href="/" role="button">Add</a>
         </div>
         <div class="col-2">
-            <a class="btn btn-outline-primary" href="/all" role="button">List All</a>
+            <a class="btn btn-outline-primary" href="#" role="button">List All</a>
         </div>
     </div>
     <table class="table">
