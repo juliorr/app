@@ -1,4 +1,4 @@
-package com.ns.task.app;
+package com.ns.task.app.controller;
 
 import com.ns.task.common.Product;
 import java.math.BigDecimal;
@@ -27,22 +27,6 @@ public class AppController {
    */
   @RequestMapping("/all")
   public String getAll(ModelMap model) {
-
-
-    // TODO: use implement the call to queue to get all the Products
-    Product newProduct = new Product();
-    newProduct.setDescription("this is a description");
-    newProduct.setId(1);
-    newProduct.setName("some Name");
-    newProduct.setPrice(new BigDecimal(6.66));
-
-    List<Product> products = new ArrayList<>();
-    products.add(newProduct);
-    products.add(newProduct);
-    products.add(newProduct);
-    products.add(newProduct);
-
-    model.put("products", products);
     return "all";
   }
 }
