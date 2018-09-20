@@ -6,7 +6,6 @@
 		<artifactId>management</artifactId>
 		<groupId>com.ns.task</groupId>
 		<version>0.0.1-SNAPSHOT</version>
-		<relativePath>../management/pom.xml</relativePath>
 	</parent>
 
 	<artifactId>app</artifactId>
